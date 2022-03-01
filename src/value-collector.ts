@@ -1,3 +1,5 @@
+import fromPairs from 'lodash.frompairs'
+
 export class ValueCollector<T> {
   private values: T[] = []
 
@@ -9,7 +11,7 @@ export class ValueCollector<T> {
 
   toRecord(): Record<string, T> {
     const entries = this.values.map((x, i) => [this.createKey(i + 1), x])
-    return Object.fromEntries(entries)
+    return fromPairs(entries)
   }
 
   private createKey(num: number): string {

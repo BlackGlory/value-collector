@@ -5,12 +5,10 @@
   , "strict": true
   , "noUnusedLocals": true
   , "noUnusedParameters": true
-  , "experimentalDecorators": true
-  , "emitDecoratorMetadata": false
+  , "esModuleInterop": true
   , "baseUrl": "."
   , "paths": {
       "@src/*": ["src/*"]
-    , "@transformers/*": ["src/transformers/*"]
     , "@test/*": ["__tests__/*"]
     }
   }
