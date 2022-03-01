@@ -10,7 +10,7 @@ yarn add value-collector
 ### ValueCollector
 ```ts
 class ValueCollector {
-  constructor(private prefix: string)
+  constructor(prefix: string)
 
   add(val: T): string
   toRecord(): Record<string, T>
