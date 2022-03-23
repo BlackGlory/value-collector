@@ -1,4 +1,4 @@
-import fromPairs from 'lodash.frompairs'
+import fromPairs from 'lodash/fromPairs'
 
 export class ValueCollector<T> {
   private values: T[] = []
